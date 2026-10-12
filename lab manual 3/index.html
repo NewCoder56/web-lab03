@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Learning Hub</title>
+</head>
+<body>
+
+  <!-- ===== PAGE HEADING AND INTRODUCTION ===== -->
+  <h1>HTML Learning Hub</h1>
+  <p>Welcome to the HTML Learning Hub. This page brings together videos, audio, a YouTube tutorial and a class notice to help beginners learn HTML step by step. Watch, listen, and then practise what you learn.</p>
+
+  <hr>
+
+  <!-- ===== 1. VIDEO WITH CONTROLS ===== -->
+  <h2>Course Introduction Video</h2>
+  <p>Start here for an overview of what you will learn. Press play to begin.</p>
+  <!-- COVER PHOTO: change the file name in poster="..." if you want a different cover image -->
+  <video controls width="480" height="270" poster="media/poster.jpg">
+    <source src="media/HTML Into.mp4" type="video/mp4">
+    <source src="media/campus.webm" type="video/webm">
+    Your browser does not support the video element.
+  </video>
+
+  <hr>
+
+  <!-- ===== 2. VIDEO WITH AUTOPLAY, MUTED AND LOOP ===== -->
+  <h2>Learning in Motion</h2>
+  <p>This short clip plays silently on a loop and has no buttons.</p>
+  <video autoplay muted loop width="480" height="270">
+    <source src="media/HTML Into.mp4" type="video/mp4">
+    <source src="media/campus.webm" type="video/webm">
+    Your browser does not support the video element.
+  </video>
+
+  <hr>
+
+  <!-- ===== 3. AUDIO ===== -->
+  <h2>HTML Learning Podcast</h2>
+  <p>Listen to this podcast to revise key ideas while you relax.</p>
+  <audio controls>
+    <source src="media/podcast.mp3" type="audio/mpeg">
+    <source src="media/podcast.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <hr>
+
+  <!-- ===== 4. YOUTUBE VIDEO (IFRAME) ===== -->
+  <h2>HTML Tutorial on YouTube</h2>
+  <p>Watch this educational video for a full beginner tutorial.</p>
+  <!-- YOUTUBE LINK: replace YOUR_VIDEO_ID with the ID of your video.
+       Use the EMBED form: https://www.youtube.com/embed/VIDEO_ID
+       Example: for https://www.youtube.com/watch?v=abc123 the ID is abc123 -->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="HTML beginner tutorial on YouTube"></iframe>
+
+  <hr>
+
+  <!-- ===== 5. OBJECT (EMBEDDED NOTICE) ===== -->
+  <h2>Class Notice Board</h2>
+  <p>Read the latest notice below.</p>
+  <object data="media/notice.html" width="500" height="300">
+    The notice could not be displayed in your browser.
+  </object>
+
+</body>
+</html>
